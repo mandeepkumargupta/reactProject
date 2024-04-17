@@ -1,0 +1,28 @@
+/* CreateItem.css */
+.input-container {
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .input-field {
+    padding: 8px;
+    margin: 5px 0;
+    width: 20%;
+    box-sizing: border-box;
+    border-radius: 9px;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button:hover{
+    background-color: #007bffb0;
+  }
+  

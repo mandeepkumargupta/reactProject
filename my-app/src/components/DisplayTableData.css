@@ -1,0 +1,112 @@
+/* DisplayTableData.css */
+.table-container {
+    margin-top: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: normal;
+    text-align: left;
+    
+  }
+  
+  .custom-h2 {
+    color: #007bff;
+    font-weight: normal;
+    padding-left: 30px;
+    
+  }
+
+  .custom-h3 {
+    color: #007bff;
+    font-weight: normal;
+    
+  }
+
+  .input-elements-div{
+    margin-bottom:10px;
+  }
+  .delete-icon {
+    font-size: 2rem;
+    margin-left: 25px;
+      }
+  .delete-icon:hover{
+    color: red;
+  }
+  .edit-icon{
+    font-size: 2rem;
+  }
+
+  .edit-icon:hover{
+    color: #007bff;
+  }
+  
+  .save-icon{
+    font-size: 2rem;
+  }
+  .save-icon:hover{
+    color: #007bff;
+  }
+    
+  /* Popup CSS */
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  max-width: 300px;
+  text-align: center; /* Center the text inside the popup */
+}
+
+.popup p {
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+.confirm-button,
+.cancel-button {
+  margin: 0 20px; /* Add margin between buttons */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1; /* Distribute equal width among flex items */
+  max-width: 70px; /* Set max-width for button */
+}
+
+.confirm-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* .confirm-button:hover,
+.cancel-button:hover {
+  opacity: 0.8;
+} */
