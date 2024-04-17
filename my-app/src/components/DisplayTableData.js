@@ -1,9 +1,6 @@
-// DisplayTableData.js
-//import React from 'react';
 import React, { useState } from 'react';
-import './DisplayTableData.css'; // Import the CSS file
+import './DisplayTableData.css'; 
 import { MdDeleteForever,MdEdit,MdSaveAs } from "react-icons/md";
-//import { MdEdit } from "react-icons/md";
 
 
 const DisplayTableData = ({ itemList,setItemList, showTable, toggleTable }) => {
@@ -34,19 +31,14 @@ const DisplayTableData = ({ itemList,setItemList, showTable, toggleTable }) => {
     const updatedList = itemList.map((item) =>
       item.id === updatedItem.id ? updatedItem : item
 
-      //item.id === itemId ? { ...updatedItem, id: itemId } : item
+      
     );
     setEditItem(null);
     setUpdatedItem({ id: '', name: '', country: '', email: '', contact: '' });
     setItemList(updatedList);
 
-    //setEditItem(null);
   };
 
-  // const handleDeleteItem = (id) => {
-  //   const updatedList = itemList.filter((item) => item.id !== id);
-  //   setItemList(updatedList);
-  // };
 
   const handleDeleteItem = (id) => {
     setDeleteItemId(id); // Set the ID of the item to be deleted
@@ -135,10 +127,10 @@ const DisplayTableData = ({ itemList,setItemList, showTable, toggleTable }) => {
                   </td>
                   <td>
                     {editItem === item.id ? (
-                    //   <button onClick={handleUpdate}>Update</button>
+                    
                       <MdSaveAs onClick={handleUpdate} className='save-icon'/>
                     ) : (
-                    //   <button onClick={() => handleEdit(item)}>Edit</button>
+                    
                       <MdEdit onClick={() => handleEdit(item)} className='edit-icon'/>
                       
                     )}
@@ -153,14 +145,7 @@ const DisplayTableData = ({ itemList,setItemList, showTable, toggleTable }) => {
 
            
         </div>
-         {/* Confirmation Popup */}
-      {/* {deleteItemId && (
-        <div className="popup">
-          <p>Are you sure you want to delete this item?</p>
-          <button onClick={handleConfirmDelete}>Yes</button>
-          <button onClick={() => setDeleteItemId(null)}>Cancel</button>
-        </div>
-      )} */}
+        
       {deleteItemId && (
   <div className="popup">
     <h3>Confirmation</h3>

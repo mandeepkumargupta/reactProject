@@ -9,14 +9,12 @@
     margin: 5px 0;
     width: 20%;
     
-    /* box-sizing: border-box; */
-    /* border-radius: 2px; */
   }
   
   .input-field:focus{
     outline: none;
     border-color: #007bff;
-    /* box-shadow: 0 0 10px #719ece; */
+   
   }
 
   .button {

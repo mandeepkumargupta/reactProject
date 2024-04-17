@@ -1,15 +1,13 @@
-// CreateItem.js
+
 import React, { useState } from 'react';
-//import itemsData from '../data'; // Import your data from data.js
-import DisplayTableData from './DisplayTableData'; // Import the new component
-import './CreateItem.css'; // Import the CSS file
+import DisplayTableData from './DisplayTableData'; 
+import './CreateItem.css'; 
 import { MdAddBox } from "react-icons/md";
 
 const CreateItem = () => {
   const [newItem, setNewItem] = useState({ 
     id: '',
-    name: '', 
-   // description: '', 
+    name: '',  
     country: '',
     email: '',
     contact: '',
@@ -29,17 +27,7 @@ const [showTable, setShowTable] = useState(false); // State to control table vis
     setNewItem((prevItem) => ({ ...prevItem, [name]: value }));
   };
 
-  /*
-  const handleAddItem = () => {
-    if (newItem.name.trim() && newItem.description.trim()) {
-      const newItemWithId = { ...newItem, id: itemsData.length + 1 };
-      itemsData.push(newItemWithId);
-      setNewItem({ name: '', description: '' });
-    } else {
-      alert('Please enter both name and description.');
-    }
-  };
-*/
+  
 const handleAddItem = () => {
     if (
       newItem.name.trim() &&

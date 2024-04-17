@@ -60,8 +60,7 @@
     color: #007bff;
   }
     
-  /* Popup CSS */
-
+  
 .popup {
   position: fixed;
   top: 50%;
@@ -105,8 +104,3 @@
   background-color: #dc3545;
   color: #fff;
 }
-
-/* .confirm-button:hover,
-.cancel-button:hover {
-  opacity: 0.8;
-} */
